@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fork Me! FCC: Test Suite Template</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+    <div class="container">
+      <div class="header">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">This is a survey form for microverse!</p>
+        <form id="survey-form">
+          <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required="" />
+          </div>
+
+          <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required="" />
+          </div>
+
+          <div class="form-group">
+            <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+            <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age" />
+          </div>
+          <div class="form-group">
+            <p>Select your employment status.</p>
+            <select id="dropdown" name="role" class="form-control" required="">
+              <option disabled="" selected="" value="">Select current role</option>
+              <option value="student">Student</option>
+              <option value="job">Job</option>
+              <option value="learner">Self Teaching</option>
+              <option value="preferNo">Prefer not to say</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <p>Are you happy with the programme?</p>
+            <label> <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked="" />Definitely</label>
+            <label> <input name="user-recommend" value="maybe" type="radio" class="input-radio" />Maybe</label>
+            <label><input name="user-recommend" value="not-sure" type="radio" class="input-radio" />Not sure</label>
+          </div>
+
+          <div class="form-group">
+            <p>
+              What do you like about us?
+              <span class="clue">(Check all that apply)</span>
+            </p>
+
+            <label><input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox" />Learning Environment</label>
+            <label> <input name="prefer" value="back-end-projects" type="checkbox" class="input-checkbox" />Course Content</label>
+            <label><input name="prefer" value="data-visualization" type="checkbox" class="input-checkbox" />Lecturers</label>
+            <label><input name="prefer" value="challenges" type="checkbox" class="input-checkbox" />Facilities</label>
+          </div>
+
+          <div class="form-group">
+            <p>How can we improve?</p>
+            <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your suggestions..."></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
